@@ -723,8 +723,8 @@ function render() {
     // 🏃‍♂️ 프레임 단위로 주기적으로 이미지를 교차시켜 자연스러운 움직임 연출 (숫자를 조절해 속도 변경 가능)
     frameCount++;
     let currentImage = null;
-    // Math.floor(frameCount / 30) 값의 주기에 따라 1번, 2번 이미지가 번갈아 출력됩니다.
-    if (Math.floor(frameCount / 30) % 2 === 0) {
+    // Math.floor(frameCount / 40) 값의 주기에 따라 1번, 2번 이미지가 번갈아 출력됩니다.
+    if (Math.floor(frameCount / 40) % 2 === 0) {
         currentImage = (img1Loaded && img1.complete) ? img1 : null;
     } else {
         currentImage = (img2Loaded && img2.complete) ? img2 : null;
